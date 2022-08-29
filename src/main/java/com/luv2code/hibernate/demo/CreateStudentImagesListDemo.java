@@ -33,6 +33,7 @@ public class CreateStudentImagesListDemo {
 			theImages.add("photo3.jpg");
 			theImages.add("photo4.jpg");
 			theImages.add("photo4.jpg"); //Duplicate, filtered at java level by HashSet!!!
+
 			
 		//start a transaction
 			session.beginTransaction();
