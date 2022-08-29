@@ -22,26 +22,26 @@ public class CreateStudentImagesListDemo {
 
 		//create session
 		Session session = factory.getCurrentSession();
-		
+	/*
 		try {
 		//create the object
 			Student tempStudent = new Student("John","Doe","john@luv2code.com");
 			List<String> theImages = tempStudent.getImages();
-			
+
 			theImages.add("photo1.jpg");
 			theImages.add("photo2.jpg");
 			theImages.add("photo3.jpg");
 			theImages.add("photo4.jpg");
 			theImages.add("photo4.jpg"); //Duplicate, filtered at java level by HashSet!!!
 
-			
+
 		//start a transaction
 			session.beginTransaction();
-			
+
 		//save the object
 			System.out.println("Saving the student and images..");
 			session.persist(tempStudent);
-			
+
 		//commit the transaction
 			session.getTransaction().commit();
 			System.out.println("Done!!");
@@ -51,7 +51,7 @@ public class CreateStudentImagesListDemo {
 			session.close();
 			factory.close();
 		}
-		
+		*/
 
 
 	}
