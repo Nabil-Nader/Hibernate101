@@ -1,6 +1,7 @@
 package com.luv2code.hibernate.demo;
 
 import java.util.Map;
+import java.util.Set;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -26,11 +27,14 @@ public class CreateStudentImagesMapDemo {
 		try {
 		//create the object
 			Student tempStudent = new Student("John","Doe","john@luv2code.com");
-			Map<String, String> theImages = tempStudent.getImages();
+			Set<String> theImages = tempStudent.getImages();
 			
-			theImages.put("photo1.jpg", "Photo 1");
-			theImages.put("photo2.jpg", "Photo 2");
-			theImages.put("photo3.jpg", "Photo 3");
+			theImages.add("photo1.jpg");
+			theImages.add("photo2.jpg");
+			theImages.add("photo3.jpg");
+			theImages.add("photo4.jpg");
+			theImages.add("photo5.jpg");
+			theImages.add("photo3.jpg");
 
 		//start a transaction
 			session.beginTransaction();
